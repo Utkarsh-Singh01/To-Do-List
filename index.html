@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Daily Spellbook</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Floating Hogwarts Crest -->
+  <div class="crest">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Hogwartscrest.png" alt="Hogwarts Crest" />
+  </div>
+
+  <!-- Spellbook Container -->
+  <main class="spellbook parchment">
+    <h1>🪄 The Daily Spellbook</h1>
+    <p class="intro">Welcome, young wizard. Record your spells below and complete your magical duties.</p>
+
+    <!-- Spell Input -->
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="e.g. Brew Polyjuice Potion" />
+      <button onclick="addSpell()">✨ Add Spell</button>
+    </div>
+
+    <!-- List of Spells -->
+    <ul id="spellList" class="spell-list"></ul>
+  </main>
+
+  <!-- Magical Footer -->
+  <footer>
+    <p>🕯️ "Happiness can be found even in the darkest of times, if one only remembers to turn on the light." — Albus Dumbledore</p>
+    <div class="candles">
+      <div class="candle"></div>
+      <div class="candle"></div>
+      <div class="candle"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
